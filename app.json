@@ -9,7 +9,7 @@
             { "url": "heroku/python" }
           ],
     "env": {
-            "EMAIL": {
+            "email": {
               "description": "Stormgain's email.",
               "value": "example@gmail.com"
             },
