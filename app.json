@@ -1,0 +1,23 @@
+{
+    "name": "Storminator",
+    "description": "A tool for mining.",
+    "repository": "https://github.com/luke30001/storminator",
+    "logo": "https://stormgain.com/themes/custom/stormgain/favicon.png",
+    "keywords": ["Stormgain", "bot", "miner"],
+    "buildpacks": [
+            { "url": "heroku/google-chrome" },
+            { "url": "heroku/python" }
+          ],
+    "env": {
+            "EMAIL": {
+              "description": "Stormgain's email.",
+              "value": "example@gmail.com"
+            },
+            "password": {
+              "description": "Stormgain's password.",
+              "value": "example"
+            }
+          }
+    
+}
+  
