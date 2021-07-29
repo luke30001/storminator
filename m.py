@@ -12,7 +12,7 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 sys.path.append(os.getcwd()+"/chromedriver")
-d=uc.Chrome(executable_path=os.getcwd()+"/chromedriver",options=chrome_options)
+d=uc.Chrome("/chromedriver",options=chrome_options)
 def clicko():
     d.get("https://app.stormgain.com/crypto-miner/")
     time.sleep(10)
