@@ -1,6 +1,7 @@
 import undetected_chromedriver as uc
 import time
 import os
+import sys
 def read(file):
     f=open(file,"r")
     aa=f.read()
