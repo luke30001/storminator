@@ -6,7 +6,8 @@
     "keywords": ["Stormgain", "bot", "miner"],
     "buildpacks": [
             { "url": "heroku/google-chrome" },
-            { "url": "heroku/python" }
+            { "url": "heroku/python" },
+            { "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/chromedriver.tgz"}
           ],
     "env": {
             "email": {
