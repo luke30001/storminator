@@ -25,8 +25,8 @@ def clicko():
         time.sleep(2)
     d.save_screenshot("screenshot.png")
 d.get('https://app.stormgain.com/#modal_login')
-d.execute_script('document.getElementById("email").value="'+read("email")+'"')
-d.execute_script('document.getElementById("password").value="'+read("pswd")+'"')
+d.execute_script('document.getElementById("email").value="'+os.environ['email']+'"')
+d.execute_script('document.getElementById("password").value="'+os.environ['password']+'"')
 d.execute_script('document.getElementsByClassName("btn btn-mint btn-login")[0].click()')
 ii=0
 while(d.current_url!="https://app.stormgain.com/"):
