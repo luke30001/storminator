@@ -11,8 +11,6 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 d = uc.Chrome(options=chrome_options)
-d.set_page_load_timeout(30)
-d.implicitly_wait(30)
 def trio():
     try:
         d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0].click();')
