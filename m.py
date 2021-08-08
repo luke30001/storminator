@@ -26,7 +26,7 @@ def test():
         time.sleep(60)
         return (False)
 def clicko():
-    while(test()):
+    while(not test()):
         print("testing...")
     time.sleep(10)
     tt=True
