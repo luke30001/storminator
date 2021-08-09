@@ -21,6 +21,7 @@ def trio():
 def test():
     try:
         d.get("https://app.stormgain.com/crypto-miner/")
+        d.save_screenshot("screenshot.png")
         return (True)
     except:
         time.sleep(60)
