@@ -38,13 +38,13 @@ def clicko():
             trio()
             try:
                 d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0]')
-            else:
+            except:
                 tt=False
         except:
             try:
                 d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0]')
                 tt=True
-            else:
+            except:
                 tt=False
         d.save_screenshot("screenshot.png")
         time.sleep(2)
