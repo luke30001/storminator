@@ -16,8 +16,9 @@ d.implicitly_wait(30)
 def trio():
     try:
         d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0].click();')
+        return(True)
     except:
-        print("oo")
+        return(False)
 def test():
     try:
         d.get("https://app.stormgain.com/crypto-miner/")
@@ -35,17 +36,9 @@ def clicko():
         try:
             d.execute_script('document.getElementsByTagName("button")[2]')
             d.execute_script('document.getElementsByTagName("button")[1].click()')
-            trio()
-            try:
-                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0]')
-            except:
-                tt=False
+            tt=trio()
         except:
-            try:
-                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0]')
-                tt=True
-            except:
-                tt=False
+            tt=trio()
         d.save_screenshot("screenshot.png")
         time.sleep(2)
     d.save_screenshot("screenshot.png")
