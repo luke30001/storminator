@@ -37,12 +37,12 @@ def clicko():
             d.execute_script('document.getElementsByTagName("button")[1].click()')
             trio()
             try:
-                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0]')
+                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0].click()')
             except:
                 tt=False
         except:
             try:
-                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0]')
+                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0].click()')
                 tt=True
             except:
                 tt=False
