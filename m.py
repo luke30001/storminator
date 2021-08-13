@@ -55,7 +55,7 @@ while(toto):
     except:
         toto=True
 while(d.current_url!="https://app.stormgain.com/"):
-    print("waiting...")
+    print(d.current_url)
 while True:
     clicko()
     time.sleep(14400)
