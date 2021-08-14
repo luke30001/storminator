@@ -36,8 +36,8 @@ def clicko():
     tt=True
     while tt:
         try:
-            #d.execute_script('document.getElementsByTagName("button")[2]')
-            d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18")[0].click();')
+            d.execute_script('document.getElementsByTagName("button")[2]')
+            d.execute_script('document.getElementsByTagName("button")[1].click()')
             tt=trio()
         except:
             tt=trio()
