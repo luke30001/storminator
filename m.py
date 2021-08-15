@@ -34,7 +34,7 @@ def test():
             ii=ii+1
             print("org")
             if(ii==60):
-                d.execute_script('document.getElementsByClassName("text-17 md-text-18 md-font-bold leading-18kdjkjdfkjdkjfkdkfjkdjkfjdkjkjkdfdkjdkjfkdjdfkfdjfdkjdfkjkfd")[0].click();')
+                raise Exception("Issue")
             time.sleep(1)
         d.save_screenshot("screenshot.png")
         return (True)
