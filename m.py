@@ -23,7 +23,7 @@ def trio():
         return(False)
 def test():
     try:
-        d.fet("https://app.stormgain.com/crypto-miner/")
+        d.get("https://app.stormgain.com/crypto-miner/")
         d.save_screenshot("screenshot.png")
         return (True)
     except:
