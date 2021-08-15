@@ -9,6 +9,7 @@ def read(file):
 chrome_options = uc.ChromeOptions()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-browser-side-navigation')
 chrome_options.add_argument('--disable-dev-shm-usage')
 d = uc.Chrome(options=chrome_options)
 d.set_page_load_timeout(30)
