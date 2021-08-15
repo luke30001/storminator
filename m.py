@@ -27,7 +27,6 @@ def trio():
 def test():
     try:
         d.execute_script("window.open('https://app.stormgain.com/crypto-miner/')")
-        d.execute_script("window.open('https://app.stormgain.com/crypto-miner/')")
         ii=0
         while(d.current_url!="https://app.stormgain.com/crypto-miner/"):
             ii=ii+1
