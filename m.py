@@ -26,10 +26,10 @@ def test():
     try:
         d.get("https://app.stormgain.com/crypto-miner/")
         d.save_screenshot("screenshot.png")
-        return (True)
+        return (False)
     except:
         time.sleep(60)
-        return (False)
+        return (True)
 def clicko():
     while(not test()):
         print("testing...")
