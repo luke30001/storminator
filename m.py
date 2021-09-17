@@ -35,7 +35,11 @@ def clicko():
         print("testing...")
     time.sleep(10)
     tt=True
+    ioio=0
     while tt:
+        if(ioio==10):
+            while(not test()):
+                print("testing...")
         try:
             d.execute_script('document.getElementsByTagName("button")[2]')
             d.execute_script('document.getElementsByTagName("button")[1].click()')
@@ -44,6 +48,7 @@ def clicko():
             tt=trio()
         d.save_screenshot("screenshot.png")
         time.sleep(2)
+        ioio=ioio+1
     d.save_screenshot("screenshot.png")
 toto=True
 while(toto):
