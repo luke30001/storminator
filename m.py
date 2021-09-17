@@ -37,9 +37,11 @@ def clicko():
     tt=True
     ioio=0
     while tt:
-        if(ioio==10):
+        print(ioio)
+        if(ioio>10):
             while(not test()):
                 print("testing...")
+            ioio=0
         try:
             d.execute_script('document.getElementsByTagName("button")[2]')
             d.execute_script('document.getElementsByTagName("button")[1].click()')
