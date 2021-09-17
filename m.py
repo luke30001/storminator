@@ -36,6 +36,7 @@ def clicko():
     time.sleep(10)
     tt=True
     ioio=0
+    toto=0
     while tt:
         print(ioio)
         if(ioio>10):
@@ -50,6 +51,12 @@ def clicko():
             tt=trio()
         d.save_screenshot("screenshot.png")
         time.sleep(2)
+        try:
+            d.execute_script("document.getElementsByClassName('mb-1 text-15 md-text-18 leading-20 md-leading-28 md-font-bold md-text-center')[0].click()")
+        except:
+            toto=toto+1
+            if(toto==5):
+                tt=False
         ioio=ioio+1
     d.save_screenshot("screenshot.png")
 toto=True
