@@ -14,7 +14,7 @@ async def main():
     await page.goto("https://accounts.spotify.com/it/login?continue=https%3A%2F%2Fopen.spotify.com%2F")
     # create a screenshot of the page and save it
     await page.type('#login-username', 'lucar220903@gmail.com')
-    await page.type('#login-password', 'Ajax1Napoli6@')
+    await page.type('#login-password', '')
     await page.click("#login-button")
     time.sleep(3)
     await page.goto("https://open.spotify.com/playlist/37i9dQZF1E387NHJeouwRD")
